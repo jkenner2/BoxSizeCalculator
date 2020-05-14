@@ -5,21 +5,22 @@ function NumberOrder(enteredDims){
         var b = enteredDims[1];//width
         var c = enteredDims[2];//height
 
-        // Order enteredDims in descending order
-        if (a >= b && a >= c){ // determine if a is largest value
+        // Order enteredDims in descending order 
+        /* For sorting three numbers in descending order, I tired to figure out a solution myself by comparing each value to one another and making a decision based off of that. I could never get this process to work so I ended up finding this solution for number ordering on GitHub. This is not my solution and I had to modify it for my application. Here is a link to the code I used to create my algorithm for this function: https://github.com/joyns/javascript-exercises/blob/master/loops-and-conditional/sort-three-numbers.html I needed to add another condition to ensure that all three numbers being equal did not cause an error.*/
+        if (a >= b && a >= c){ // Determine if a is largest value
           if (b >= c){ // compare b to c
-            calculatedArray = [a,b,c]; // put in order based off previous decisions
+            calculatedArray = [a,b,c]; // sort values
           }else{
-            calculatedArray = [a,c,b];
+            calculatedArray = [a,c,b]; // sort values
           }
-        }else if (b >= a && b >= c){ // repeat above if statement except see if b is largest
+        }else if (b >= a && b >= c){ // Determine if b is largest value
           if (a >= c){
             calculatedArray = [b,a,c];
           }else{
             calculatedArray = [b,c,a];
           }
-        }else if (c >= a && c >= b){ // repeat above two if statements except see if c is largest
-          if (a > b){
+        }else if (c >= a && c >= b){ // Determine if c is largest value
+          if (a >= b){
             calculatedArray = [c,a,b];
           }else{
             calculatedArray = [c,b,a];
