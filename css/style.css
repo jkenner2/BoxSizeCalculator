@@ -1,0 +1,29 @@
+body {
+  background-color: #CCCCCC;
+  color: #000;
+  font-family: verdana, arial, sans-serif;
+}
+
+#wrapper {
+  text-align: center;
+  width: 80%;
+  background-color: #0099FF;
+  min-width: 960px;
+  max-width: 2048px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px #fff;
+}
+
+main {
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: #fff;
+}
+h1 {
+  color: #FFF;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-family: georgia, "times new roman", sans-serif;
+}
